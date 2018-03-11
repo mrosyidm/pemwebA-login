@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="a.js"></script>
+</head>
+<body background="6.jpg">
+<form class="modal-content" action="result.php" method="post" enctype="multipart/form-data">
+    
+    <b><p align="center">REGISTRASI BRAWIJAYA CARD</p></b>
+    <div class="imgcontainer">
+      <img src="ub.jpg" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required id="myInput">
+      <input type="checkbox" onclick="myFunction()">Show Password<br><br>
+      <label for="email"><b>Email </b></label>
+      <input type="email" placeholder="contoh@ub.com" name="email" required><br>
+      <label for="Gen"><b>Jenis Kelamin :</b></label>
+      <input type="radio" name="gender" value="Laki-laki" required> Laki-laki
+  	  <input type="radio" name="gender" value="Perempuan"> Perempuan<br><br>
+      <label for="alamat"><b>Alamat Asal    :</b></label>
+      <P>
+      <TEXTAREA name="thetext" rows="20" cols="80" required>
+      Isikan alamat anda...
+      </TEXTAREA>
+      </P>
+      <label for="Jalur"><b>Jalur Masuk</b></label>
+      <select name="jalur" required>
+      <option value="SNMPTN">SNMPTN</option>
+      <option value="SBMPTN">SBMPTN</option>
+      <option value="MANDIRI">MANDIRI</option>
+      </select>
+      <br><br>
+      <label for="hobi"><b>Hobi</b></label><br>
+      <input type="checkbox" name="hobi[]" value="Membaca">Membaca<br>
+      <input type="checkbox" name="hobi[]" value="Menulis">Menulis<br>
+      <input type="checkbox" name="hobi[]" value="Olahraga">Olahraga<br>
+      <input type="checkbox" name="hobi[]" value="Berwisata">Berwisata<br><br>
+      <label for="foto"><b>Foto Pribadi</b></label>
+      <input type="file" name="upload">
+      <br>
+      <button type="submit" class="submit_login" value="Submit">Submit</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
